@@ -752,7 +752,14 @@ class _ContactScreenState extends State<ContactScreen> with TickerProviderStateM
       const SizedBox(height: 12),
       _ContactCard(icon: Icons.location_on_rounded, label: 'LOCATION', value: 'Rajkot, India', copyValue: 'Rajkot, India', color: kPink, canCopy: false),
       const SizedBox(height: 12),
-      _ContactCard(icon: Icons.access_time_rounded, label: 'TIMEZONE', value: 'IST (UTC +5:30)', copyValue: 'IST', color: kYellow, canCopy: false),
+      _ContactCard(
+        icon: Icons.school_rounded,
+        label: 'EDUCATION',
+        value: 'B.E (Computer Engineering), KSV University, Gandhinagar',
+        copyValue: 'B.E (Computer Engineering), KSV University, Gandhinagar',
+        color: kBlue,
+        canCopy: false,
+      ),
 
       const SizedBox(height: 32),
 
@@ -863,13 +870,6 @@ class _ContactScreenState extends State<ContactScreen> with TickerProviderStateM
             _emailCtrl.clear();
             _subjectCtrl.clear();
             _msgCtrl.clear();
-
-            // Success message
-            ScaffoldMessenger.of(context).showSnackBar(
-              const SnackBar(
-                content: Text("Message sent successfully 🚀"),
-              ),
-            );
           },
         ),
 

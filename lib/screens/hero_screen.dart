@@ -864,8 +864,8 @@ class _HeroScreenState extends State<HeroScreen>
   Widget _heroRight() {
     return Center(
       child: Container(
-        width: 540,
-        height: 540,
+        width: 340,
+        height: 340,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           border: Border.all(
